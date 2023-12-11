@@ -4,9 +4,9 @@ if(isset($_GET["id"])) {
   $id = $_GET["id"];
 
 $server_name = "localhost";
-$user_name = "Virag";
+$user_name = "root";
 $password = "";
-$database = "CRUD";
+$database = "myshop";
 
 $connection = new mysqli($server_name, $user_name, $password, $database);
 

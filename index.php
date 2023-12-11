@@ -37,10 +37,10 @@
                     }
 
                 $sql = "SELECT * FROM clients";
-                $result = $con->query($sql);
+                $result = $conn->query($sql);
                 
                 if (!$result) {
-                    die("". $con->error);
+                    die("". $conn->error);
                 }
 
                 while($row = $result->fetch_assoc()) {
@@ -60,21 +60,8 @@
                         </td>
                     </tr>";
                 }
-
-
                 ?>
-                <tr>
-                    <td>10</td>
-                    <td>Bill Gates</td>
-                    <td>bill.asda@gmail.com</td>
-                    <td>+23212313213</td>
-                    <td>New Ypur, Usa</td>
-                    <td>18/05/2020</td>
-                    <td>
-                        <a href="btn btn-primary btn-sm" href="./edit.php">Edit</a>
-                        <a href="btn btn-primary btn-sm" href="./delete.php">Delete</a>
-                    </td>
-                </tr>
+
                
             </tbody>
         </table>
